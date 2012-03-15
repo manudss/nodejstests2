@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard tf1 News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+    </style>
+    <link href="/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/bootstrap/docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap/docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap/docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/bootstrap/docs/assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <link href="/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+    <link href="/jqueryui/plugins.css" rel="stylesheet">
+    <link href="/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+
+
+</head>
+
+<body>
+<script language="JavaScript">
+    function selectMenu(menuItem) {
+        toggleActive();
+        $('#'+menuItem).addClass('active');
+        $('#'+menuItem+' i').addClass('icon-white');
+        $('#'+menuItem+' i').addClass('show').removeClass('hide');                }
+
+    function toggleActive() {
+        $('#sidebarMenu li').removeClass('active');
+        $('#sidebarMenu i').removeClass('icon-white');
+        $('#sidebarMenu li .icon-chevron-right').removeClass('show').addClass('hide');
+    }
+</script>
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <img src="http://lorempixel.com/220/140/technics/9/" alt="tf1 news">
+                <br/>
+
+                <hr/>
+                <ul class="nav nav-list" id="sidebarMenu">
+                    <li id="audience">
+                        <a href="/audience/" onclick="selectMenu('audience'); return true;">
+                            <i class="icon-signal pull-left"></i>
+                            <i class="icon-chevron-right pull-right hide"></i>                           
+                            Audience</a>
+                    </li>
+                    <br/>
+                    <li id="topContenus">
+                        <a href="/topContenus/" onclick="selectMenu('topContenus'); return true;">
+                            <i class="icon-upload pull-left"></i>
+                            <i class="icon-chevron-right pull-right hide"></i>
+                            Top contenus
+                        </a>
+                    </li>
+                    <br/>
+                    <li id="tendances">
+                        <a href="/tendances/" onclick="selectMenu('tendances'); return true;">
+                            <i class="icon-search pull-left"></i>
+                            <i class="icon-chevron-right pull-right hide"></i>
+                            Tendances
+                        </a>
+                    </li>
+                    <br/>
+                    <li id="concurrence">
+                        <a href="/concurrence/" onclick="selectMenu('concurrence'); return true;">
+                            <i class="icon-screenshot pull-left"></i>
+                            <i class="icon-chevron-right pull-right hide"></i>
+                            Concurrence
+                        </a>
+                    </li>
+                </ul>
+
+                <br/>
+                <br/>
+                <br/>
+                <hr/>
+                <div class="row-fluid">
+                    <div class="span3">&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="span6 btn-inverse marketing-byline" style="text-align: center;">
+                        <h2><small>JEU 05 FEV</small></h2>
+                        <h1>19:07</h1>
+                    </div>
+                    <div class="span3">&nbsp;&nbsp;&nbsp;
+                    </div>
+                 </div>
+            </div><!--/.well -->
+
+
+        </div><!--/span-->
+        <%- body %>
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>&copy; Company 2012</p>
+    </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/bootstrap/docs/assets/js/jquery.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-transition.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-alert.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-popover.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-button.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
+<script src="/bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>
