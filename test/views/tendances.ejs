@@ -89,15 +89,11 @@
             <i class="icon-search"></i><small>Top Tweet</small>
             <h2>Twitter</h2>
             <ul class="unstyled">
-                <li>carolina panthers</li>
+                <% for(var i=0; i<topTwitter.length; i++) {%>
+                <li><%= topTwitter[i] %></li>
                 <hr/>
-                <li>facebook ipo</li>
-                <hr/>
-                <li>irs</li>
-                <hr/>
-                <li>ground hog day</li>
-                <hr/>
-                <li>shaun white</li>
+                <% } %>
+
             </ul>
         </div><!--/span-->
     </div><!--/row-->
